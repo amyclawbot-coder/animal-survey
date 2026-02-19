@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>最喜歡的動物問卷</title>
+  <style>
+    body{font-family:"Noto Sans TC",system-ui,sans-serif;background:#f5f7fb;margin:0;display:grid;place-items:center;min-height:100vh}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;max-width:520px;width:92%;padding:22px;box-shadow:0 8px 20px rgba(0,0,0,.06)}
+    h1{font-size:24px;margin:0 0 6px}
+    p{color:#6b7280;margin:0 0 14px}
+    .opt{display:block;padding:10px 12px;border:1px solid #d1d5db;border-radius:10px;margin:8px 0;cursor:pointer}
+    .opt input{margin-right:8px}
+    button{margin-top:12px;width:100%;border:0;background:#2563eb;color:#fff;border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer}
+    .note{margin-top:10px;font-size:12px;color:#6b7280}
+  </style>
+</head>
+<body>
+  <form class="card" action="https://formsubmit.co/ck60644@gmail.com" method="POST">
+    <h1>最喜歡哪個動物？</h1>
+    <p>單選題（請選一個）</p>
+
+    <label class="opt"><input type="radio" name="favorite_animal" value="貓" required>貓</label>
+    <label class="opt"><input type="radio" name="favorite_animal" value="狗">狗</label>
+    <label class="opt"><input type="radio" name="favorite_animal" value="兔子">兔子</label>
+
+    <input type="hidden" name="_subject" value="新問卷回覆：最喜歡哪個動物">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://amyclawbot-coder.github.io/animal-survey/thanks.html">
+
+    <button type="submit">送出</button>
+    <div class="note">送出後會顯示完成頁，結果寄送到指定信箱。</div>
+  </form>
+</body>
+</html>
